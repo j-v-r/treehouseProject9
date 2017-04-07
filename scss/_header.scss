@@ -1,0 +1,61 @@
+div#header {
+
+		display: flex;
+		flex-direction: row;
+		background-color: #B898C0;
+		justify-content: space-between;
+		width: 100%;
+		color: white;
+
+		div.container {
+			padding: 1rem 1.25rem;
+
+			h1 {
+				font-size: 1.25rem;
+				margin-top: .35rem;
+				font-weight: 700;
+
+				span {
+					font-weight: 300;
+				}
+			}
+
+			&:last-child {
+				display: flex;
+				flex-direction: row;
+
+				img {
+					width: 1.75rem;
+					height: 1.75rem;
+				}
+
+				div#logged-in-mark {
+					height: .35rem;
+					width: .35rem;
+					border-radius: 50%;
+					background-color: #7CEAB4;
+					margin-right: .5rem;
+					margin-left: -.25rem;
+				}
+
+				div#header-border {
+					width: 1px;
+					height: 1.75rem;
+					background-color: #CBB4D1;
+					margin-right:.5rem;
+				}
+
+				div#user-avatar {
+					width: 1.75rem;
+					height: 1.75rem;
+					border-radius: 50%;
+					background-color: white;
+				}
+
+				div#user-name {
+					margin-left: .75rem;
+					margin-top: .35rem;
+				}
+			}
+		}
+	}

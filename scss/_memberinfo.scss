@@ -1,0 +1,133 @@
+div#dashboard-body { 
+	div#membersInfo {
+
+		display:flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+				flex-direction: row;
+			}
+
+		div.container  {
+
+			padding: .5rem;
+			border-bottom: 1px grey solid;
+			border-top: 1px grey solid;
+
+			@media screen and (min-width: 768px) {
+				width: 45%;
+				margin: 0 auto;
+			}
+
+			h3 {
+				font-weight: 700;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+
+			div#newMembers {
+
+				ul {
+
+					li {
+
+						border-bottom: 1px grey solid;
+						padding: 1rem;
+
+						&:last-child {
+							border: none;
+						}
+
+						@media screen and (min-width: 768px) {
+							display: flex;
+							flex-direction: row;
+							justify-content: space-between;
+						}
+
+						div.newMemberItems {
+							display: flex;
+							flex-direction: row;
+
+							div.newMemberAvatar {
+								img {
+									display: block;
+									width: 2rem;
+									height: 2rem;
+									border-radius: 50%;
+									margin: .25rem;
+								}
+							}
+
+							div.newMemberInfo {
+								margin: .25rem;
+
+								h5 {
+									margin-bottom: .5rem;
+								}
+							}
+						}
+
+						div.newMemberDate {
+							margin: .25rem;
+						}
+					}
+				}
+			}
+
+			div#recentActivity {
+
+				ul {
+
+					li {
+
+						border-bottom: 1px grey solid;
+						padding: 1rem;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+
+						&:last-child {
+							border: none;
+						}
+
+						div.memberActivity {
+							display: flex;
+							flex-direction: row;
+
+							div.newMemberAvatar {
+								img {
+									display: block;
+									width: 2rem;
+									height: 2rem;
+									border-radius: 50%;
+									margin: .25rem;
+								}
+							}
+
+							div.update {
+								margin: .25rem;
+
+								p {
+									&:first-child {
+										margin-bottom: .5rem;
+									}
+									&:last-child {
+										font-weight: 300;
+									}
+								}
+							}
+						}
+
+						div.arrow {
+							width: 0; 
+							height: 0; 
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+							border-left: 15px solid #B898C0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

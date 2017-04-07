@@ -1,0 +1,168 @@
+
+div#messageAndSettings {
+
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+				flex-direction: row;
+			}
+
+		div.container {
+
+			display: flex;
+			flex-direction: column;
+			padding: .5rem;
+
+			@media screen and (min-width: 768px) {
+				width: 50%;
+			}
+
+			div#error {
+				text-align: center;
+				font-weight: 700;
+				width: 80%;
+				margin: 1rem auto;
+				padding: 1rem;
+				border-radius: 5px;
+				background-color: #D44D5C;
+				color: white;
+				opacity: .5;
+				display: none;
+
+				span {
+					font-size: 1.25rem;
+					padding-right: 1.5rem;
+				}
+			}
+
+			div#success {
+				text-align: center;
+				font-weight: 700;
+				width: 80%;
+				margin: 1rem auto;
+				padding: 1rem;
+				border-radius: 5px;
+				background-color: #B6EEA6;
+				color: black;
+				opacity: .5;
+				display: none;
+
+				span {
+					font-size: 1.25rem;
+					padding-right: 1.5rem;
+				}
+			}
+
+			h3 {
+				font-weight: 600;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+
+			input#searchUser {
+				margin-bottom: 1rem;
+				font-size: 1.25rem;
+				border-radius: 5px;
+				padding: .25rem;
+			}
+
+			textarea {
+				margin-bottom: 1rem;
+				resize: none;
+				font-size: 1.25rem;
+				border-radius: 5px;
+				border: 1px grey solid;
+				padding: .25rem;
+			}
+
+			input#submitMessageBtn {
+				width: 75%;
+				margin: 0 auto 1rem;
+				background-color: #B898C0;
+				opacity: .8;
+				border-radius: 5px;
+				outline: none;
+				border: none;
+				color: white;
+				font-size: 2rem;
+				font-weight: 600;
+				cursor: pointer;
+			}
+
+			div#emailSettings {	
+
+				display: flex;
+				flex-direction: row;
+				padding: 1rem;
+				div.container {
+						width: 50%;
+
+						p {
+							margin-top: .5rem;
+						}
+				}
+			}
+
+			div#publicProfileSettings {
+				display: flex;
+				flex-direction: row;
+				padding: 1rem;
+				div.container {
+						width: 50%;
+
+						p {
+							margin-top: .5rem;
+						}
+				}
+			}
+
+			div#timezone {
+
+				width: 90%;
+				margin: 0 auto;
+				padding: 1rem;
+
+				select {
+					margin-bottom: 1rem;
+					font-size: 1.5rem;
+					border-radius: 5px;
+					border: 1px grey solid;
+					padding: .25rem;
+					width: 100%;
+					
+				}
+			}
+
+			div#saveCancel {
+
+				@media screen and (min-width: 768px) {
+					display: flex;
+					flex-direction: row;
+					margin-top: 2.85rem;
+				}
+				
+				div.container {
+
+				@media screen and (min-width: 768px) {
+					width: 50%;
+				}
+
+				input {
+					background-color: #B898C0;
+					opacity: .8;
+					border-radius: 5px;
+					outline: none;
+					border: none;
+					color: white;
+					font-size: 2rem;
+					font-weight: 600;
+					cursor: pointer;
+				}
+
+				}
+			}
+		}   
+	}
+		

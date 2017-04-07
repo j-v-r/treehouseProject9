@@ -1,0 +1,26 @@
+body {
+
+	width: 100%;
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+
+	div#main-content {
+
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		min-height: 100%;
+
+		div#dashboard {	
+			width: 80%;
+
+			@media screen and (min-width: 768px) {
+				width: 85%;
+			}
+
+			@media screen and (min-width: 1050px) {
+				width: 92%;
+			}
+		}
+	}
+}

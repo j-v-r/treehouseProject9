@@ -1,0 +1,430 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif; }
+  body div#main-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%; }
+    body div#main-content div#dashboard {
+      width: 80%; }
+      @media screen and (min-width: 768px) {
+        body div#main-content div#dashboard {
+          width: 85%; } }
+      @media screen and (min-width: 1050px) {
+        body div#main-content div#dashboard {
+          width: 92%; } }
+
+div#header {
+  display: flex;
+  flex-direction: row;
+  background-color: #B898C0;
+  justify-content: space-between;
+  width: 100%;
+  color: white; }
+  div#header div.container {
+    padding: 1rem 1.25rem; }
+    div#header div.container h1 {
+      font-size: 1.25rem;
+      margin-top: .35rem;
+      font-weight: 700; }
+      div#header div.container h1 span {
+        font-weight: 300; }
+    div#header div.container:last-child {
+      display: flex;
+      flex-direction: row; }
+      div#header div.container:last-child img {
+        width: 1.75rem;
+        height: 1.75rem; }
+      div#header div.container:last-child div#logged-in-mark {
+        height: .35rem;
+        width: .35rem;
+        border-radius: 50%;
+        background-color: #7CEAB4;
+        margin-right: .5rem;
+        margin-left: -.25rem; }
+      div#header div.container:last-child div#header-border {
+        width: 1px;
+        height: 1.75rem;
+        background-color: #CBB4D1;
+        margin-right: .5rem; }
+      div#header div.container:last-child div#user-avatar {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        background-color: white; }
+      div#header div.container:last-child div#user-name {
+        margin-left: .75rem;
+        margin-top: .35rem; }
+
+div#nav {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-height: 100%;
+  background-color: #76617B;
+  padding: .5rem 0;
+  justify-content: flex-start; }
+  div#nav div.selected {
+    border-left: solid 2px #7CEAB4; }
+  @media screen and (min-width: 768px) {
+    div#nav {
+      width: 15%; } }
+  @media screen and (min-width: 1050px) {
+    div#nav {
+      width: 8%; } }
+  div#nav div.container a {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin: 1rem auto;
+    padding: .25rem; }
+    div#nav div.container a svg {
+      width: 2rem; }
+
+div#dashboard-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  div#dashboard-head div.container {
+    padding: .75rem; }
+    @media screen and (min-width: 768px) {
+      div#dashboard-head div.container {
+        padding: 1rem; } }
+    div#dashboard-head div.container h2 {
+      font-size: 1.25rem;
+      font-weight: 600; }
+      @media screen and (min-width: 768px) {
+        div#dashboard-head div.container h2 {
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1050px) {
+        div#dashboard-head div.container h2 {
+          font-size: 1.75rem;
+          margin-top: .25rem; } }
+    div#dashboard-head div.container:last-child {
+      width: 90%;
+      text-align: right;
+      border-left: 1px solid grey;
+      border-bottom: 1px solid grey;
+      border-radius: 5px;
+      background-color: #E7E7E7; }
+      div#dashboard-head div.container:last-child input {
+        width: 95%;
+        padding: .25rem;
+        height: 1.25rem;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        color: #ccc; }
+        @media screen and (min-width: 768px) {
+          div#dashboard-head div.container:last-child input {
+            width: 75%;
+            padding: 1rem;
+            height: 1.5rem;
+            font-size: 1.5rem; } }
+        @media screen and (min-width: 1050px) {
+          div#dashboard-head div.container:last-child input {
+            width: 50%;
+            padding: 1.25rem;
+            height: 1.75rem;
+            font-size: 1.75rem; } }
+
+div#alert div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  background-color: #B898C0;
+  color: white;
+  border-radius: 5px; }
+  div#alert div.container p {
+    font-weight: 300;
+    font-size: 1.5rem; }
+    div#alert div.container p span {
+      margin-right: .75rem;
+      font-weight: 600; }
+  div#alert div.container div#close-alert {
+    cursor: pointer; }
+    div#alert div.container div#close-alert p {
+      font-weight: 600; }
+
+div#web-traffic div.container {
+  width: 80%;
+  margin: 15px auto; }
+  div#web-traffic div.container div#lineChartHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem auto 1rem; }
+    div#web-traffic div.container div#lineChartHead h3 {
+      font-weight: 700;
+      font-size: 1.5rem; }
+    div#web-traffic div.container div#lineChartHead ul {
+      display: flex;
+      flex-direction: row; }
+      div#web-traffic div.container div#lineChartHead ul li {
+        margin-left: .25rem;
+        padding: .25rem;
+        border: 1px solid #B898C0;
+        border-radius: 5px; }
+        div#web-traffic div.container div#lineChartHead ul li.current {
+          background-color: #E7E7E7; }
+
+div#barAndPieChart {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    div#barAndPieChart {
+      flex-direction: row;
+      justify-content: space-between; } }
+  div#barAndPieChart div.container {
+    width: 80%;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      div#barAndPieChart div.container {
+        width: 45%;
+        border-top: 1px grey solid;
+        border-bottom: 1px grey solid; } }
+    div#barAndPieChart div.container h3 {
+      font-weight: 700;
+      margin: 1rem 0;
+      font-size: 1.5rem; }
+    div#barAndPieChart div.container canvas#myPieChart {
+      margin: 0 auto; }
+
+div#socialMedia {
+  padding: 1rem;
+  margin: 0 auto; }
+  div#socialMedia h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
+  div#socialMedia div.container {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      div#socialMedia div.container {
+        flex-direction: row;
+        justify-content: space-between; } }
+    div#socialMedia div.container div.socialMediaWidget {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid grey;
+      border-radius: 5px;
+      background-color: rgba(184, 152, 192, 0.7);
+      width: 235px;
+      margin: 1rem auto;
+      padding: .25rem; }
+      div#socialMedia div.container div.socialMediaWidget div.iconContainer {
+        width: 50%;
+        background-color: white;
+        border-radius: 100%;
+        padding: .5rem; }
+      div#socialMedia div.container div.socialMediaWidget img {
+        margin: .5rem auto 0;
+        width: 75%;
+        display: block; }
+      div#socialMedia div.container div.socialMediaWidget div.innerWidget {
+        width: 50%;
+        padding: .75rem; }
+        div#socialMedia div.container div.socialMediaWidget div.innerWidget h4 {
+          font-weight: 600;
+          font-size: 2rem;
+          margin-bottom: 1rem; }
+        div#socialMedia div.container div.socialMediaWidget div.innerWidget p {
+          font-size: 2rem; }
+
+div#dashboard-body div#membersInfo {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    div#dashboard-body div#membersInfo {
+      flex-direction: row; } }
+  div#dashboard-body div#membersInfo div.container {
+    padding: .5rem;
+    border-bottom: 1px grey solid;
+    border-top: 1px grey solid; }
+    @media screen and (min-width: 768px) {
+      div#dashboard-body div#membersInfo div.container {
+        width: 45%;
+        margin: 0 auto; } }
+    div#dashboard-body div#membersInfo div.container h3 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.5rem; }
+    div#dashboard-body div#membersInfo div.container div#newMembers ul li {
+      border-bottom: 1px grey solid;
+      padding: 1rem; }
+      div#dashboard-body div#membersInfo div.container div#newMembers ul li:last-child {
+        border: none; }
+      @media screen and (min-width: 768px) {
+        div#dashboard-body div#membersInfo div.container div#newMembers ul li {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; } }
+      div#dashboard-body div#membersInfo div.container div#newMembers ul li div.newMemberItems {
+        display: flex;
+        flex-direction: row; }
+        div#dashboard-body div#membersInfo div.container div#newMembers ul li div.newMemberItems div.newMemberAvatar img {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          margin: .25rem; }
+        div#dashboard-body div#membersInfo div.container div#newMembers ul li div.newMemberItems div.newMemberInfo {
+          margin: .25rem; }
+          div#dashboard-body div#membersInfo div.container div#newMembers ul li div.newMemberItems div.newMemberInfo h5 {
+            margin-bottom: .5rem; }
+      div#dashboard-body div#membersInfo div.container div#newMembers ul li div.newMemberDate {
+        margin: .25rem; }
+    div#dashboard-body div#membersInfo div.container div#recentActivity ul li {
+      border-bottom: 1px grey solid;
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      div#dashboard-body div#membersInfo div.container div#recentActivity ul li:last-child {
+        border: none; }
+      div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.memberActivity {
+        display: flex;
+        flex-direction: row; }
+        div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.memberActivity div.newMemberAvatar img {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          margin: .25rem; }
+        div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.memberActivity div.update {
+          margin: .25rem; }
+          div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.memberActivity div.update p:first-child {
+            margin-bottom: .5rem; }
+          div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.memberActivity div.update p:last-child {
+            font-weight: 300; }
+      div#dashboard-body div#membersInfo div.container div#recentActivity ul li div.arrow {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #B898C0; }
+
+div#messageAndSettings {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    div#messageAndSettings {
+      flex-direction: row; } }
+  div#messageAndSettings div.container {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem; }
+    @media screen and (min-width: 768px) {
+      div#messageAndSettings div.container {
+        width: 50%; } }
+    div#messageAndSettings div.container div#error {
+      text-align: center;
+      font-weight: 700;
+      width: 80%;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #D44D5C;
+      color: white;
+      opacity: .5;
+      display: none; }
+      div#messageAndSettings div.container div#error span {
+        font-size: 1.25rem;
+        padding-right: 1.5rem; }
+    div#messageAndSettings div.container div#success {
+      text-align: center;
+      font-weight: 700;
+      width: 80%;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #B6EEA6;
+      color: black;
+      opacity: .5;
+      display: none; }
+      div#messageAndSettings div.container div#success span {
+        font-size: 1.25rem;
+        padding-right: 1.5rem; }
+    div#messageAndSettings div.container h3 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.5rem; }
+    div#messageAndSettings div.container input#searchUser {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      border-radius: 5px;
+      padding: .25rem; }
+    div#messageAndSettings div.container textarea {
+      margin-bottom: 1rem;
+      resize: none;
+      font-size: 1.25rem;
+      border-radius: 5px;
+      border: 1px grey solid;
+      padding: .25rem; }
+    div#messageAndSettings div.container input#submitMessageBtn {
+      width: 75%;
+      margin: 0 auto 1rem;
+      background-color: #B898C0;
+      opacity: .8;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      cursor: pointer; }
+    div#messageAndSettings div.container div#emailSettings {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem; }
+      div#messageAndSettings div.container div#emailSettings div.container {
+        width: 50%; }
+        div#messageAndSettings div.container div#emailSettings div.container p {
+          margin-top: .5rem; }
+    div#messageAndSettings div.container div#publicProfileSettings {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem; }
+      div#messageAndSettings div.container div#publicProfileSettings div.container {
+        width: 50%; }
+        div#messageAndSettings div.container div#publicProfileSettings div.container p {
+          margin-top: .5rem; }
+    div#messageAndSettings div.container div#timezone {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1rem; }
+      div#messageAndSettings div.container div#timezone select {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        border: 1px grey solid;
+        padding: .25rem;
+        width: 100%; }
+    @media screen and (min-width: 768px) {
+      div#messageAndSettings div.container div#saveCancel {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.85rem; } }
+    @media screen and (min-width: 768px) {
+      div#messageAndSettings div.container div#saveCancel div.container {
+        width: 50%; } }
+    div#messageAndSettings div.container div#saveCancel div.container input {
+      background-color: #B898C0;
+      opacity: .8;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      cursor: pointer; }
+
+/*# sourceMappingURL=application.css.map */

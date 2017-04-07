@@ -1,0 +1,33 @@
+div#alert {
+
+	div.container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		margin: 2rem auto;
+		padding: 1.25rem;
+		background-color: #B898C0;
+		color: white;
+		border-radius: 5px;
+
+		p {
+			font-weight: 300;
+			font-size: 1.5rem;
+			span {
+				margin-right: .75rem;
+				font-weight: 600;
+			}
+		}
+
+		div#close-alert {
+
+			cursor: pointer;
+
+			p{
+				font-weight: 600;
+			}
+		}
+	}
+}
