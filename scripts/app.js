@@ -133,7 +133,7 @@ var pieChart = new Chart (ctx3, {
 				fontSize: 10
 			}
 		},
-		responsive: false,
+		responsive: true,
 		maintainAspectRatio: true	
 	}
 

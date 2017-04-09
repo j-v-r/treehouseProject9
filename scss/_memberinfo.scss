@@ -21,7 +21,7 @@ div#dashboard-body {
 
 			h3 {
 				font-weight: 700;
-				margin-bottom: 1rem;
+				margin-bottom: .5rem;
 				font-size: 1.5rem;
 			}
 
@@ -46,7 +46,11 @@ div#dashboard-body {
 
 						div.newMemberItems {
 							display: flex;
-							flex-direction: row;
+							flex-direction: column;
+
+							@media screen and (min-width: 768px) {
+								flex-direction: row;
+							}
 
 							div.newMemberAvatar {
 								img {
@@ -64,11 +68,17 @@ div#dashboard-body {
 								h5 {
 									margin-bottom: .5rem;
 								}
+
+								p {
+									font-size: .9rem;
+								}
 							}
 						}
 
 						div.newMemberDate {
-							margin: .25rem;
+							p {
+									font-size: .9rem;
+								}
 						}
 					}
 				}
