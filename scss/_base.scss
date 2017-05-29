@@ -15,6 +15,10 @@ body {
 		div#dashboard {	
 			width: 80%;
 
+			div#dashboard-body {
+				padding: .25rem;
+			}
+
 			@media screen and (min-width: 768px) {
 				width: 85%;
 			}

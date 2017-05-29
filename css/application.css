@@ -10,6 +10,8 @@ body {
     min-height: 100%; }
     body div#main-content div#dashboard {
       width: 80%; }
+      body div#main-content div#dashboard div#dashboard-body {
+        padding: .25rem; }
       @media screen and (min-width: 768px) {
         body div#main-content div#dashboard {
           width: 85%; } }
